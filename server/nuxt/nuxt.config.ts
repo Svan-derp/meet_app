@@ -57,7 +57,7 @@ export const config: NuxtConfig = {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/axios', 'nuxt-precompress'],
+  modules: ['@nuxtjs/axios', 'nuxt-precompress', 'nuxt-buefy'],
 
   publicRuntimeConfig: {
     axios: {

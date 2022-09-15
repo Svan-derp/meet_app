@@ -29,7 +29,8 @@
       "@nuxt/types",
       "@nuxtjs/axios",
       "reflect-metadata",
-      "jest"
+      "jest",
+      "buefy/types"
     ]
   },
   "exclude": ["dist"]

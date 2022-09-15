@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1>index</h1>
-    <button @click="fetchUsers()" :disabled="loading">refresh</button>
+    <h1>fetch users:</h1>
+    <b-button loading @click="fetchUsers()" :disabled="loading">refresh</b-button>
     <ul class="user-list">
       <li v-for="user in users" :key="user.id">
         <span>{{ user.name }}</span>
