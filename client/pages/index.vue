@@ -1,12 +1,7 @@
 <template>
   <div>
-    <h1>fetch users:</h1>
-    <b-button loading @click="fetchUsers()" :disabled="loading">refresh</b-button>
-    <ul class="user-list">
-      <li v-for="user in users" :key="user.id">
-        <span>{{ user.name }}</span>
-      </li>
-    </ul>
+    <h1>HELLO from index page</h1>
+    <UserList />
   </div>
 </template>
 
@@ -18,26 +13,9 @@
 </style>
 
 <script lang="ts">
-import { User } from '@common/UserInterface';
-import { Component, Vue } from 'nuxt-property-decorator';
+import UserList from '@/components/test.vue';
 
-@Component
-export default class YourComponent extends Vue {
-  users: User[] = [];
-  loading = false;
-
-  async fetch() {
-    return this.fetchUsers();
-  }
-
-  async fetchUsers() {
-    try {
-      this.loading = true;
-
-      this.users = (await this.$axios.get('users'))?.data ?? [];
-    } finally {
-      this.loading = false;
-    }
-  }
-}
+export default {
+  components: { UserList },
+};
 </script>
