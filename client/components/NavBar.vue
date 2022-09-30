@@ -26,9 +26,11 @@
         </NuxtLink></b-navbar-item
       >
       <b-navbar-dropdown>
-        <b-navbar-item href="#"> Team </b-navbar-item>
-        <b-navbar-item href="#"> Contact </b-navbar-item>
-        <b-navbar-item href="#"> Meld een probleem </b-navbar-item>
+        <b-navbar-item><NuxtLink to="/team"> Team </NuxtLink></b-navbar-item>
+        <b-navbar-item
+          ><NuxtLink to="/contact"> Contact</NuxtLink></b-navbar-item
+        >
+        <b-navbar-item> Meld een probleem </b-navbar-item>
       </b-navbar-dropdown>
     </template>
 
