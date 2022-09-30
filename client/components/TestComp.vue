@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>fetch users:</h1>
+    <h1>fetch component:</h1>
     <b-button @click="getUsers()">refresh</b-button>
     <ul class="user-list">
       <li v-for="user in users" :key="user.id">
