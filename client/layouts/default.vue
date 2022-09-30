@@ -1,10 +1,16 @@
 <template>
-  <nuxt />
+  <div>
+    <NavBar />
+    <nuxt />
+    <!-- TODO: make sure all notifications are called from here -->
+  </div>
 </template>
 
 <script lang="ts">
-import { Vue, Component } from 'nuxt-property-decorator';
+import NavBar from '@/components/navbar.vue';
 
-@Component
-export default class DefaultLayout extends Vue {}
+export default {
+  name: 'MasterLayout',
+  components: { NavBar },
+};
 </script>
