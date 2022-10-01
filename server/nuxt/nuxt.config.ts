@@ -34,8 +34,8 @@ export const config: NuxtConfig = {
    ** Headers of the page
    */
   head: {
-    title: 'title',
-    htmlAttrs: { lang: 'en' },
+    title: 'MEET_APP',
+    htmlAttrs: { lang: 'nl' },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

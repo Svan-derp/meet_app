@@ -3,7 +3,9 @@
     <b-field>
       <SelectActivityCategory />
       <SelectLocation />
-      <b-button label="Zoek" type="is-primary" />
+      <NuxtLink to="/find">
+        <b-button label="Zoek" type="is-primary" />
+      </NuxtLink>
     </b-field>
   </div>
 </template>
@@ -12,7 +14,7 @@
 import SelectActivityCategory from '@/components/Base/SelectActivityCategory.vue';
 import SelectLocation from '@/components/Base/SelectLocation.vue';
 
-// TODO: get compontent data
+// TODO: get compontent data and send to activity page
 
 export default {
   name: 'QuickSearch',

@@ -1,9 +1,9 @@
 <template>
-  <b-navbar>
+  <b-navbar type="is-light">
+    <!-- TODO: hover and active must only underline item + ?!cursor? -->
     <template #brand>
       <b-navbar-item
         ><NuxtLink to="/">
-          <!-- <b-navbar-item tag="router-link" :to="{ path: '/' }"> -->
           <!-- <img
           src="https://raw.githubusercontent.com/buefy/buefy/dev/static/img/buefy-logo.png"
           alt="Lightweight UI components for Vue.js based on Bulma"
@@ -16,16 +16,12 @@
     </template>
     <template #start>
       <b-navbar-item>
-        <NuxtLink to="/dashboard/find"
-          >Zoek activiteit
-        </NuxtLink></b-navbar-item
+        <NuxtLink to="/find">Zoek activiteit </NuxtLink></b-navbar-item
       >
       <b-navbar-item>
-        <NuxtLink to="/dashboard/host"
-          >Plaats activiteit
-        </NuxtLink></b-navbar-item
+        <NuxtLink to="/host">Plaats activiteit </NuxtLink></b-navbar-item
       >
-      <b-navbar-dropdown>
+      <b-navbar-dropdown label="Met ons">
         <b-navbar-item><NuxtLink to="/team"> Team </NuxtLink></b-navbar-item>
         <b-navbar-item
           ><NuxtLink to="/contact"> Contact</NuxtLink></b-navbar-item
@@ -54,11 +50,7 @@ import { Component, Vue } from 'nuxt-property-decorator';
 export default class MenuHeader extends Vue {}
 </script>
 
-<style>
-.navbar {
-  background-color: aquamarine;
-}
-
+<style lang="scss">
 .navbar-start {
   padding-left: 10vw;
 }
