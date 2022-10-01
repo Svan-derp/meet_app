@@ -2,8 +2,7 @@
   <b-navbar type="is-light">
     <!-- TODO: hover and active must only underline item + ?!cursor? -->
     <template #brand>
-      <NuxtLink to="/">
-        <b-navbar-item>
+      <NuxtLink class="navbar-item brand" to="/">
           <!-- <img
           src="https://raw.githubusercontent.com/buefy/buefy/dev/static/img/buefy-logo.png"
           alt="Lightweight UI components for Vue.js based on Bulma"
@@ -11,27 +10,22 @@
           width="192"
         /> -->
           <strong>MEET_APP</strong>
-        </b-navbar-item></NuxtLink
+        </NuxtLink
       >
     </template>
     <template #start>
-      <NuxtLink to="/find"
-        ><b-navbar-item> Zoek activiteit </b-navbar-item></NuxtLink
-      >
-      <NuxtLink to="/host">
-        <b-navbar-item> Plaats activiteit</b-navbar-item>
-      </NuxtLink>
+      <NuxtLink class="navbar-item" to="/find"> Zoek activiteit </NuxtLink>
+      <NuxtLink class="navbar-item" to="/host"> Plaats activiteit </NuxtLink>
       <b-navbar-dropdown label="Met ons">
-        <NuxtLink to="/team"><b-navbar-item> Team </b-navbar-item></NuxtLink>
-        <NuxtLink to="/contact">
-          <b-navbar-item>Contact</b-navbar-item></NuxtLink
+        <NuxtLink class="navbar-item" to="/team"> Team </NuxtLink>
+        <NuxtLink class="navbar-item" to="/contact">
+          Contact</NuxtLink
         >
-        <b-navbar-item> Meld een probleem </b-navbar-item>
+         <b-navbar-item> Meld een probleem </b-navbar-item>
       </b-navbar-dropdown>
     </template>
 
     <template #end>
-      <b-navbar-item tag="div">
         <div class="buttons">
           <NuxtLink to="/">
           <a class="button is-primary">
@@ -40,7 +34,7 @@
           <NuxtLink to="/">
           <a class="button is-light"> Aanmelden </a></NuxtLink>
         </div>
-      </b-navbar-item>
+      
     </template>
   </b-navbar>
 </template>
@@ -52,8 +46,23 @@ import { Component, Vue } from 'nuxt-property-decorator';
 export default class MenuHeader extends Vue {}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .navbar-start {
-  padding-left: 10vw;
+  padding-left: 15vw !important;
+}
+.button{
+  margin-right: 20px
+}
+// TODO: work on this glued stuff (exclude brand focus+hover and dropdown bgcolor)
+a.navbar-item.nuxt-link-exact-active:not(.brand) {
+  border-bottom: 5px solid var(--primary)  !important;
+}
+a.navbar-item:focus {
+  background-color: var(--secondary) !important;
+  border-bottom: 5px solid var(--primary)  !important;
+}
+a.navbar-item:hover {
+  background-color: var(--secondary) !important;
+  border-bottom: 3px solid var(--primary)  !important;
 }
 </style>
