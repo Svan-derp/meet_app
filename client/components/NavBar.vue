@@ -43,26 +43,30 @@
 import { Component, Vue } from 'nuxt-property-decorator';
 
 @Component
-export default class MenuHeader extends Vue {}
+export default class MenuHeader extends Vue { }
 </script>
 
 <style lang="scss" scoped>
 .navbar-start {
   padding-left: 15vw !important;
 }
-.button{
+
+.button {
   margin-right: 20px
 }
+
 // TODO: work on this glued stuff (exclude brand focus+hover and dropdown bgcolor)
 a.navbar-item.nuxt-link-exact-active:not(.brand) {
-  border-bottom: 5px solid var(--primary)  !important;
+  border-bottom: 5px solid var(--primary) !important;
 }
+
 a.navbar-item:focus {
   background-color: var(--secondary) !important;
-  border-bottom: 5px solid var(--primary)  !important;
+  border-bottom: 5px solid var(--primary) !important;
 }
+
 a.navbar-item:hover {
   background-color: var(--secondary) !important;
-  border-bottom: 3px solid var(--primary)  !important;
+  border-bottom: 3px solid var(--primary) !important;
 }
 </style>
