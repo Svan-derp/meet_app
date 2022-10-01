@@ -31,7 +31,7 @@ section.quote {
 }
 
 .search-bar {
-  margin-top: -16vh;
-  width: 60vw;
+  margin-top: -22px;
+  max-width: 800px;
 }
 </style>
