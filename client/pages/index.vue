@@ -9,9 +9,7 @@
       </h2>
       <!--  -->
     </section>
-    <div class="container search-bar">
-      <QuickSearch />
-    </div>
+    <QuickSearch class="container search-bar" />
   </div>
 </template>
 
