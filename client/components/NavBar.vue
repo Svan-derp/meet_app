@@ -2,8 +2,8 @@
   <b-navbar type="is-light">
     <!-- TODO: hover and active must only underline item + ?!cursor? -->
     <template #brand>
-      <b-navbar-item
-        ><NuxtLink to="/">
+      <NuxtLink to="/">
+        <b-navbar-item>
           <!-- <img
           src="https://raw.githubusercontent.com/buefy/buefy/dev/static/img/buefy-logo.png"
           alt="Lightweight UI components for Vue.js based on Bulma"
@@ -11,20 +11,20 @@
           width="192"
         /> -->
           <strong>MEET_APP</strong>
-        </NuxtLink>
-      </b-navbar-item>
+        </b-navbar-item></NuxtLink
+      >
     </template>
     <template #start>
-      <b-navbar-item>
-        <NuxtLink to="/find">Zoek activiteit </NuxtLink></b-navbar-item
+      <NuxtLink to="/find"
+        ><b-navbar-item> Zoek activiteit </b-navbar-item></NuxtLink
       >
-      <b-navbar-item>
-        <NuxtLink to="/host">Plaats activiteit </NuxtLink></b-navbar-item
-      >
+      <NuxtLink to="/host">
+        <b-navbar-item> Plaats activiteit</b-navbar-item>
+      </NuxtLink>
       <b-navbar-dropdown label="Met ons">
-        <b-navbar-item><NuxtLink to="/team"> Team </NuxtLink></b-navbar-item>
-        <b-navbar-item
-          ><NuxtLink to="/contact"> Contact</NuxtLink></b-navbar-item
+        <NuxtLink to="/team"><b-navbar-item> Team </b-navbar-item></NuxtLink>
+        <NuxtLink to="/contact">
+          <b-navbar-item>Contact</b-navbar-item></NuxtLink
         >
         <b-navbar-item> Meld een probleem </b-navbar-item>
       </b-navbar-dropdown>
