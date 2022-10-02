@@ -1,9 +1,27 @@
 <template>
-  <h1>simple find dashboard page</h1>
+  <div class="columns">
+    <div class="column left-area">
+      <SearchMenu />
+    </div>
+    <div class="column right-area">
+      <EventList />
+    </div>
+  </div>
 </template>
 
 <script>
-export default {};
+import SearchMenu from '@/components/SearchMenu.vue';
+import EventList from '@client/components/EventList.vue';
+export default { components: { SearchMenu, EventList } };
 </script>
 
-<style></style>
+<style scoped>
+.left-area {
+  padding-top: 35px;
+  padding-left: 35px;
+  max-width: 460px;
+}
+.right-area {
+  padding: 40px;
+}
+</style>
