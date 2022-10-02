@@ -12,7 +12,11 @@
 <script>
 import SearchMenu from '@/components/SearchMenu.vue';
 import EventList from '@client/components/EventList.vue';
-export default { components: { SearchMenu, EventList } };
+
+export default {
+  name: 'FindPage',
+  components: { SearchMenu, EventList },
+};
 </script>
 
 <style scoped>
