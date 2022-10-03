@@ -59,12 +59,7 @@ export const config: NuxtConfig = {
   /*
    ** Nuxt.js modules
    */
-  modules: [
-    '@nuxtjs/axios',
-    'nuxt-precompress',
-    '@nuxtjs/auth-next',
-    'nuxt-buefy',
-  ],
+  modules: ['@nuxtjs/axios', 'nuxt-precompress', 'nuxt-buefy'],
 
   publicRuntimeConfig: {
     axios: {
@@ -75,8 +70,8 @@ export const config: NuxtConfig = {
   privateRuntimeConfig: {
     auth: {
       strategries: {
-        local: {}
-      }
+        local: {},
+      },
     },
     axios: {
       baseURL: `http://127.0.0.1:${port}`,
