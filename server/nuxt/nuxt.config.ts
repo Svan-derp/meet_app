@@ -22,6 +22,8 @@ export const config: NuxtConfig = {
     NODE_ENV,
     port: port as string,
     host: host as string,
+    MAPBOX_KEY:
+      'pk.eyJ1Ijoic3ZhbmRlcnAiLCJhIjoiY2t5eXAwNmoxMDFhNDJ1azR1dm9kYnRrMyJ9.rcwkL2-qO5oiIjvFK46-Zg',
   },
 
   dev: isDev,
@@ -57,7 +59,12 @@ export const config: NuxtConfig = {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/axios', 'nuxt-precompress', 'nuxt-buefy'],
+  modules: [
+    '@nuxtjs/axios',
+    'nuxt-precompress',
+    '@nuxtjs/auth-next',
+    'nuxt-buefy',
+  ],
 
   publicRuntimeConfig: {
     axios: {
@@ -66,6 +73,11 @@ export const config: NuxtConfig = {
   },
 
   privateRuntimeConfig: {
+    auth: {
+      strategries: {
+        local: {}
+      }
+    },
     axios: {
       baseURL: `http://127.0.0.1:${port}`,
     },
@@ -77,6 +89,9 @@ export const config: NuxtConfig = {
     enabled: true, // Enable in production
     report: false, // set true to turn one console messages during module init
     test: /\.(js|css|html|txt|xml|svg)$/, // files to compress on build
+    router: {
+      middleware: ['auth'],
+    },
     // Serving options
     middleware: {
       // You can disable middleware if you serve static files using nginx...
