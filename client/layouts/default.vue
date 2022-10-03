@@ -7,10 +7,12 @@
 </template>
 
 <script lang="ts">
-import NavBar from '@/components/navbar.vue';
+import NavBar from '@/components/Component/navbar.vue';
 
 export default {
   name: 'MasterLayout',
   components: { NavBar },
 };
 </script>
+
+<style></style>

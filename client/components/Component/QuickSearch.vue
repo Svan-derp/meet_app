@@ -1,5 +1,5 @@
 <template lang="vue">
-<b-field>
+<b-field class="quicksearch-bar">
   <SelectActivityCategory/>
   <SelectLocation />
   <NuxtLink to="/find">
@@ -21,8 +21,11 @@ export default {
 </script>
 
 <style>
-/* TODO: scoped is not working properly
-.select.is-fullwidth {
+.quicksearch-bar {
+  box-shadow: 5px 5px 20px 15px rgba(0, 0, 0, 0.3);
+}
+/* .select.is-fullwidth {
+  TODO: scoped is not working properly
   width: 250px;
   margin-right: -250px;
 } */

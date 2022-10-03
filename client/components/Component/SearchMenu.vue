@@ -24,8 +24,8 @@
 </template>
 
 <script>
-import SelectLocation from './Base/SelectLocation.vue';
-import SelectActivityCategory from './Base/SelectActivityCategory.vue';
+import SelectLocation from '@/components/Base/SelectLocation.vue';
+import SelectActivityCategory from '@/components/Base/SelectActivityCategory.vue';
 export default {
   data() {
     return {
@@ -38,9 +38,10 @@ export default {
 
 <style scoped>
 .filter-menu {
-  background-color: var(--secondary);
   max-width: 400px;
   border-radius: 24px;
+  background-color: var(--secondary);
+  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.4);
 }
 .filter-item {
   padding: 24px;
