@@ -1,6 +1,6 @@
 <template lang="vue">
   <b-navbar type="is-light">
-    <!-- TODO: hover and active must only underline item + ?!cursor? -->
+    //TODO: hover and active must only underline item + ?!cursor?
     <template #brand>
       <NuxtLink class="navbar-item brand" to="/">
           <!-- <img
@@ -56,17 +56,14 @@ export default class MenuHeader extends Vue { }
 }
 
 // TODO: work on this glued stuff (exclude brand focus+hover and dropdown bgcolor)
-a.navbar-item.nuxt-link-exact-active:not(.brand) {
-  border-bottom: 5px solid var(--primary) !important;
-}
-
 a.navbar-item:focus {
   background-color: var(--secondary) !important;
-  border-bottom: 5px solid var(--primary) !important;
 }
-
 a.navbar-item:hover {
   background-color: var(--secondary) !important;
   border-bottom: 3px solid var(--primary) !important;
+}
+a.navbar-item.nuxt-link-exact-active:not(.brand) {
+  border-bottom: 5px solid var(--primary) !important;
 }
 </style>
