@@ -1,21 +1,25 @@
 <template>
-  <div class="columns">
-    <div class="column left-area">
-      <SearchMenu />
-    </div>
-    <div class="column right-area">
-      <EventList />
+  <div class="find-page">
+    <MapBox />
+    <div class="columns">
+      <div class="column left-area">
+        <SearchMenu />
+      </div>
+      <div class="column right-area">
+        <EventList />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import SearchMenu from '@/components/SearchMenu.vue';
-import EventList from '@client/components/EventList.vue';
+import SearchMenu from '@/components/Component/SearchMenu.vue';
+import EventList from '@/components/Layout/FindEventsList.vue';
+import MapBox from '@client/components/Base/MapBox.vue';
 
 export default {
   name: 'FindPage',
-  components: { SearchMenu, EventList },
+  components: { SearchMenu, EventList, MapBox },
 };
 </script>
 
@@ -27,5 +31,9 @@ export default {
 }
 .right-area {
   padding: 40px;
+}
+.find-page {
+  margin-top: 24px;
+  background-color: rgba(0, 0, 0, 0.01);
 }
 </style>

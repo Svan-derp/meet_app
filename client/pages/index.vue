@@ -1,7 +1,7 @@
 <template lang="vue">
 <div>
   <section class="section is-large quote">
-    //TODO:Loop in over few quotes
+    <!-- //TODO:Loop in over few quotes -->
     <h1 class="title">Zoek activiteiten bij jouw in de buurt!</h1>
     <h2 class="subtitle">
       Plan of neem deel aan activiteiten waar je aanmeldingen en updates kan bijhouden.
@@ -12,7 +12,7 @@
 </template>
 
 <script lang="ts">
-import QuickSearch from '@/components/QuickSearch.vue';
+import QuickSearch from '@/components/Component/QuickSearch.vue';
 
 export default {
   name: 'IndexPage',
@@ -22,7 +22,7 @@ export default {
 
 <style lang="scss" scoped>
 section.quote {
-  background-image: url(https://cdn.shortpixel.ai/spai/q_lossy+w_739+to_avif+ret_img/https://www.mindful.org/content/uploads/party.png);
+  background-image: url(../assets/youssef-naddam.jpg);
   background-size: cover;
 }
 
