@@ -2,21 +2,29 @@
   <b-navbar>
     <template #brand>
       <b-navbar-item
-        href="https://apps.parantion.nl/scorionx/#/login/portal?name=huict"
-      >
-        <!-- <b-navbar-item tag="router-link" :to="{ path: '/' }"> -->
-        <!-- <img
+        ><NuxtLink to="/">
+          <!-- <b-navbar-item tag="router-link" :to="{ path: '/' }"> -->
+          <!-- <img
           src="https://raw.githubusercontent.com/buefy/buefy/dev/static/img/buefy-logo.png"
           alt="Lightweight UI components for Vue.js based on Bulma"
           height="64"
           width="192"
         /> -->
-        <strong>MEET_APP</strong>
+          <strong>MEET_APP</strong>
+        </NuxtLink>
       </b-navbar-item>
     </template>
     <template #start>
-      <b-navbar-item href="#"> Zoek activiteit </b-navbar-item>
-      <b-navbar-item href="#"> Plaats activiteit </b-navbar-item>
+      <b-navbar-item>
+        <NuxtLink to="/dashboard/find"
+          >Zoek activiteit
+        </NuxtLink></b-navbar-item
+      >
+      <b-navbar-item>
+        <NuxtLink to="/dashboard/host"
+          >Plaats activiteit
+        </NuxtLink></b-navbar-item
+      >
       <b-navbar-dropdown>
         <b-navbar-item href="#"> Team </b-navbar-item>
         <b-navbar-item href="#"> Contact </b-navbar-item>
