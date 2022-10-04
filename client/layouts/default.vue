@@ -1,11 +1,7 @@
 <template lang="vue">
 <div>
     <NavBar />
-<<<<<<< HEAD
     <nuxt />
-=======
-    <Nuxt />
->>>>>>> renamed-branch
     <!-- TODO: make sure all notifications are called from here -->
   </div>
 </template>
