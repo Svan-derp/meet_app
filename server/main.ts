@@ -54,13 +54,9 @@ declare const module: any;
     });
 
     await app.listen(config?.env.port, config?.env.host, () => {
-<<<<<<< HEAD
       log.log(
         `Server listening at http://${config?.env.host}:${config.env.port}`,
       );
-=======
-      log.log(`Server listening at http://${config?.env.host}:${config.env.port}`);
->>>>>>> renamed-branch
     });
 
     if (module.hot) {
