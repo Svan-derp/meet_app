@@ -1,7 +1,37 @@
 <template>
-  <div></div>
+  <div>
+    <section class="section is-large quote">
+      <!-- TODO:Loop in over few quotes -->
+      <h1 class="title">Zoek activiteiten bij jouw in de buurt!</h1>
+      <h2 class="subtitle">
+        Plan of neem deel aan activiteiten waar je aanmeldingen en updates kan
+        bijhouden.
+      </h2>
+      <!--  -->
+    </section>
+    <div class="container search-bar">
+      <QuickSearch />
+    </div>
+  </div>
 </template>
 
-<style lang="scss"></style>
+<script lang="ts">
+import QuickSearch from '../components/QuickSearch.vue';
 
-<script lang="ts"></script>
+export default {
+  name: 'IndexPage',
+  components: { QuickSearch },
+};
+</script>
+
+<style lang="scss" scoped>
+section.quote {
+  background-image: url(https://cdn.shortpixel.ai/spai/q_lossy+w_739+to_avif+ret_img/https://www.mindful.org/content/uploads/party.png);
+  background-size: cover;
+}
+
+.search-bar {
+  margin-top: -16vh;
+  width: 60vw;
+}
+</style>
