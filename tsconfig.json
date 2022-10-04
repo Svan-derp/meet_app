@@ -14,17 +14,14 @@
     "baseUrl": "./",
     "rootDir": "./",
     "incremental": true,
+    "jsx": "preserve",
     "paths": {
       "@server/*": ["server/*"],
       "@client/*": ["client/*"],
       "@common/*": ["common/*"],
       "~/*": ["./client/*"]
     },
-    "typeRoots": [
-      "node_modules/@types",
-      "client",
-      "server"
-    ],
+    "typeRoots": ["node_modules/@types", "client", "server"],
     "types": [
       "@nuxt/types",
       "@nuxtjs/axios",

@@ -22,6 +22,8 @@ export const config: NuxtConfig = {
     NODE_ENV,
     port: port as string,
     host: host as string,
+    MAPBOX_KEY:
+      'pk.eyJ1Ijoic3ZhbmRlcnAiLCJhIjoiY2t5eXAwNmoxMDFhNDJ1azR1dm9kYnRrMyJ9.rcwkL2-qO5oiIjvFK46-Zg',
   },
 
   dev: isDev,
@@ -34,8 +36,8 @@ export const config: NuxtConfig = {
    ** Headers of the page
    */
   head: {
-    title: 'title',
-    htmlAttrs: { lang: 'en' },
+    title: 'MEET_APP',
+    htmlAttrs: { lang: 'nl' },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -47,7 +49,7 @@ export const config: NuxtConfig = {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['@/assets/main.scss'],
 
   /*
    ** Plugins to load before mounting the App
@@ -77,6 +79,9 @@ export const config: NuxtConfig = {
     enabled: true, // Enable in production
     report: false, // set true to turn one console messages during module init
     test: /\.(js|css|html|txt|xml|svg)$/, // files to compress on build
+    router: {
+      middleware: ['auth'],
+    },
     // Serving options
     middleware: {
       // You can disable middleware if you serve static files using nginx...
