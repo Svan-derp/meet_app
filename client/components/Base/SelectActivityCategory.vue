@@ -1,5 +1,6 @@
 <template>
-  <b-select placeholder="Alle categorieen" icon="form-select">
+  <!-- TODO: placeholder renders way to big -->
+  <b-select placeholder="Categorieen" icon="form-select">
     <optgroup label="Black Sails">
       <option value="flint">Flint</option>
       <option value="silver">Silver</option>
