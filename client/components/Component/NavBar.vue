@@ -1,6 +1,10 @@
 <template lang="vue">
   <b-navbar type="is-light">
+<<<<<<< HEAD
     <!-- //TODO: hover and active must only underline item + ?!cursor? -->
+=======
+    //TODO: hover and active must only underline item + ?!cursor?
+>>>>>>> feature-branch
     <template #brand>
       <NuxtLink class="navbar-item brand" to="/">
           <!-- <img
@@ -19,10 +23,14 @@
       <b-navbar-dropdown label="Met ons">
         <NuxtLink class="navbar-item" to="/team"> Team </NuxtLink>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <NuxtLink class="navbar-item" to="/test">
 =======
         <NuxtLink class="navbar-item" to="/contact">
 >>>>>>> demo
+=======
+        <NuxtLink class="navbar-item" to="/contact">
+>>>>>>> feature-branch
           Contact</NuxtLink
         >
          <b-navbar-item> Meld een probleem </b-navbar-item>
@@ -31,12 +39,15 @@
 
     <template #end>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <!-- <div v-if="$auth.loggedIn">
     {{ $auth.name}}</div>
     <div v-else> -->
       
 =======
 >>>>>>> demo
+=======
+>>>>>>> feature-branch
         <div class="buttons">
           <NuxtLink to="/">
           <a class="button is-primary">
@@ -46,23 +57,33 @@
           <a class="button is-light"> Aanmelden </a></NuxtLink>
         </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <!-- </div> -->
 =======
       
 >>>>>>> demo
+=======
+      
+>>>>>>> feature-branch
     </template>
   </b-navbar>
 </template>
 
 <script lang="ts">
 <<<<<<< HEAD
+<<<<<<< HEAD
 export default  {}
 =======
+=======
+>>>>>>> feature-branch
 import { Component, Vue } from 'nuxt-property-decorator';
 
 @Component
 export default class MenuHeader extends Vue { }
+<<<<<<< HEAD
 >>>>>>> demo
+=======
+>>>>>>> feature-branch
 </script>
 
 <style lang="scss" scoped>

@@ -68,6 +68,11 @@ export const config: NuxtConfig = {
   },
 
   privateRuntimeConfig: {
+    auth: {
+      strategries: {
+        local: {},
+      },
+    },
     axios: {
       baseURL: `http://127.0.0.1:${port}`,
     },

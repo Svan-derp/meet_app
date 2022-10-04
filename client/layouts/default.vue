@@ -8,7 +8,10 @@
   <div>
     <NavBar />
     <nuxt />
+<<<<<<< HEAD
 >>>>>>> demo
+=======
+>>>>>>> feature-branch
     <!-- TODO: make sure all notifications are called from here -->
   </div>
 </template>

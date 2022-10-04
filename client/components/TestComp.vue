@@ -3,9 +3,12 @@
     <h1>fetch component:</h1>
     <b-button @click="getUsers()">refresh</b-button>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <b-button @click="log()">loggin</b-button>
 =======
 >>>>>>> demo
+=======
+>>>>>>> feature-branch
     <ul class="user-list">
       <li v-for="user in users" :key="user.id">
         <span>{{ user.name }}</span>
@@ -27,6 +30,7 @@ export default class UserList extends Vue {
     return this.fetchUsers();
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
   async log() {
     try {
       this.loading = true;
@@ -41,6 +45,8 @@ export default class UserList extends Vue {
   }
 =======
 >>>>>>> demo
+=======
+>>>>>>> feature-branch
 
   async fetchUsers() {
     try {
