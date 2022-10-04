@@ -23,9 +23,6 @@ export default class UserList extends Vue {
   async getUsers() {
     return this.fetchUsers();
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   async log() {
     try {
       this.loading = true;
@@ -38,13 +35,6 @@ export default class UserList extends Vue {
       this.loading = false;
     }
   }
-=======
->>>>>>> demo
-=======
->>>>>>> feature-branch
-=======
->>>>>>> dev
-
   async fetchUsers() {
     try {
       this.loading = true;

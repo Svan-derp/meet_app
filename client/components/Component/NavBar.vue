@@ -1,6 +1,10 @@
 <template lang="vue">
   <b-navbar type="is-light">
+<<<<<<< HEAD
     <!-- //TODO: hover and active must only underline item + ?!cursor? -->
+=======
+    //TODO: hover and active must only underline item + ?!cursor?
+>>>>>>> renamed-branch
     <template #brand>
       <NuxtLink class="navbar-item brand" to="/">
           <!-- <img
@@ -29,6 +33,10 @@
     <!-- <div v-if="$auth.loggedIn">
     {{ $auth.name}}</div>
     <div v-else> -->
+<<<<<<< HEAD
+=======
+      
+>>>>>>> renamed-branch
         <div class="buttons">
           <NuxtLink to="/">
           <a class="button is-primary">
@@ -43,11 +51,15 @@
 </template>
 
 <script lang="ts">
+<<<<<<< HEAD
 import { Component, Vue } from 'nuxt-property-decorator';
 
 @Component
 export default class MenuHeader extends Vue { }
 
+=======
+export default  {}
+>>>>>>> renamed-branch
 </script>
 
 <style lang="scss" scoped>

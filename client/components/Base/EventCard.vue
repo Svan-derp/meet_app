@@ -21,6 +21,9 @@
         <NuxtLink class="button" to="/event/join[user]"
           >Direct aanmelden</NuxtLink
         >
+        <NuxtLink class="button" to="/event/join[user]"
+          >Direct aanmelden</NuxtLink
+        >
       </div>
     </div>
   </div>
