@@ -1,6 +1,6 @@
 <template>
   <b-autocomplete
-    :data="['jQuery', 'Vue', 'React']"
+    :data="['Amsterdam', 'Utrecht', 'Amersfoort']"
     placeholder="Locatie"
     icon="map-marker"
     expanded
