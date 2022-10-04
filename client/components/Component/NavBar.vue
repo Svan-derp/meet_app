@@ -1,6 +1,6 @@
 <template lang="vue">
   <b-navbar type="is-light">
-    //TODO: hover and active must only underline item + ?!cursor?
+    <!-- //TODO: hover and active must only underline item + ?!cursor? -->
     <template #brand>
       <NuxtLink class="navbar-item brand" to="/">
           <!-- <img
@@ -18,7 +18,11 @@
       <NuxtLink class="navbar-item" to="/host"> Plaats activiteit </NuxtLink>
       <b-navbar-dropdown label="Met ons">
         <NuxtLink class="navbar-item" to="/team"> Team </NuxtLink>
+<<<<<<< HEAD
         <NuxtLink class="navbar-item" to="/test">
+=======
+        <NuxtLink class="navbar-item" to="/contact">
+>>>>>>> demo
           Contact</NuxtLink
         >
          <b-navbar-item> Meld een probleem </b-navbar-item>
@@ -26,10 +30,13 @@
     </template>
 
     <template #end>
+<<<<<<< HEAD
     <!-- <div v-if="$auth.loggedIn">
     {{ $auth.name}}</div>
     <div v-else> -->
       
+=======
+>>>>>>> demo
         <div class="buttons">
           <NuxtLink to="/">
           <a class="button is-primary">
@@ -38,13 +45,24 @@
           <NuxtLink to="/">
           <a class="button is-light"> Aanmelden </a></NuxtLink>
         </div>
+<<<<<<< HEAD
     <!-- </div> -->
+=======
+      
+>>>>>>> demo
     </template>
   </b-navbar>
 </template>
 
 <script lang="ts">
+<<<<<<< HEAD
 export default  {}
+=======
+import { Component, Vue } from 'nuxt-property-decorator';
+
+@Component
+export default class MenuHeader extends Vue { }
+>>>>>>> demo
 </script>
 
 <style lang="scss" scoped>
