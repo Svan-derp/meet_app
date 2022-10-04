@@ -1,6 +1,6 @@
 <template lang="vue">
 <b-field>
-  <SelectActivityCategory />
+  <SelectActivityCategory/>
   <SelectLocation />
   <NuxtLink to="/find">
     <b-button label="Zoek" type="is-primary" />
@@ -19,3 +19,11 @@ export default {
   components: { SelectActivityCategory, SelectLocation },
 };
 </script>
+
+<style>
+/* TODO: scoped is not working properly
+.select.is-fullwidth {
+  width: 250px;
+  margin-right: -250px;
+} */
+</style>

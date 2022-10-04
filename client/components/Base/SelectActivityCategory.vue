@@ -1,6 +1,5 @@
 <template>
-  <!-- TODO: placeholder renders way to big -->
-  <b-select placeholder="Categorieen" icon="form-select">
+  <b-select expanded placeholder="Categorieen">
     <optgroup label="Black Sails">
       <option value="flint">Flint</option>
       <option value="silver">Silver</option>
@@ -26,3 +25,5 @@
 </template>
 
 <script lang="ts"></script>
+
+<style scoped></style>
