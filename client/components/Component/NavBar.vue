@@ -18,7 +18,7 @@
       <NuxtLink class="navbar-item" to="/host"> Plaats activiteit </NuxtLink>
       <b-navbar-dropdown label="Met ons">
         <NuxtLink class="navbar-item" to="/team"> Team </NuxtLink>
-        <NuxtLink class="navbar-item" to="/contact">
+        <NuxtLink class="navbar-item" to="/test">
           Contact</NuxtLink
         >
          <b-navbar-item> Meld een probleem </b-navbar-item>
@@ -26,6 +26,10 @@
     </template>
 
     <template #end>
+    <!-- <div v-if="$auth.loggedIn">
+    {{ $auth.name}}</div>
+    <div v-else> -->
+      
         <div class="buttons">
           <NuxtLink to="/">
           <a class="button is-primary">
@@ -34,16 +38,13 @@
           <NuxtLink to="/">
           <a class="button is-light"> Aanmelden </a></NuxtLink>
         </div>
-      
+    <!-- </div> -->
     </template>
   </b-navbar>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'nuxt-property-decorator';
-
-@Component
-export default class MenuHeader extends Vue { }
+export default  {}
 </script>
 
 <style lang="scss" scoped>
