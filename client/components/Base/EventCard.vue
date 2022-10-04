@@ -18,7 +18,9 @@
       </div>
       <div class="buttons">
         <NuxtLink class="button" to="/event[event]">Meer informatie</NuxtLink>
-        <NuxtLink class="button" to="/event/join[user]">Direct aanmelden</NuxtLink>
+        <NuxtLink class="button" to="/event/join[user]"
+          >Direct aanmelden</NuxtLink
+        >
       </div>
     </div>
   </div>
