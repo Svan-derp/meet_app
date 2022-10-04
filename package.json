@@ -14,7 +14,7 @@
     "build": "concurrently \"yarn build:back\" \"yarn build:front\"",
     "dev": "cross-env NODE_ENV=development nest build --webpack --webpackPath webpack.config.js --watch",
     "start": "node dist/server/main",
-    "lint": "eslint \"{common,test,server,client}/**/*.{js,ts,vue}\"",
+    "lint": "eslint \"{common,test,server,client}/**/*.{js,ts,vue}\" --fix",
     "format": "yarn run lint --fix",
     "test": "jest --config test/jest.config.js --passWithNoTests",
     "test:watch": "yarn test --watch",
