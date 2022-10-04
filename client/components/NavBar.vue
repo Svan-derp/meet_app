@@ -1,4 +1,4 @@
-<template>
+<template lang="vue">
   <b-navbar type="is-light">
     <!-- TODO: hover and active must only underline item + ?!cursor? -->
     <template #brand>
@@ -33,10 +33,12 @@
     <template #end>
       <b-navbar-item tag="div">
         <div class="buttons">
+          <NuxtLink to="/">
           <a class="button is-primary">
             <strong>Inschrijven</strong>
-          </a>
-          <a class="button is-light"> Aanmelden </a>
+          </a></NuxtLink>
+          <NuxtLink to="/">
+          <a class="button is-light"> Aanmelden </a></NuxtLink>
         </div>
       </b-navbar-item>
     </template>
