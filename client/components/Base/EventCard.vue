@@ -18,9 +18,7 @@
       </div>
       <div class="buttons">
         <NuxtLink class="button" to="/event[event]">Meer informatie</NuxtLink>
-        <NuxtLink class="button" to="/event/join[user]"
-          >Direct aanmelden</NuxtLink
-        >
+        <NuxtLink class="button" to="/event/join[user]">Direct aanmelden</NuxtLink>
       </div>
     </div>
   </div>
@@ -49,7 +47,7 @@ export default {
 .card-content {
   color: white;
   position: absolute;
-  border-radius: 12px;
+  border-radius: 4px;
   bottom: 0;
   background-color: var(--primary);
   overflow: hidden;
@@ -60,7 +58,7 @@ export default {
 .title {
   color: white;
   /* TODO: fix for mobile display */
-  margin-top: -8px;
+  margin-top: -10px;
 }
 .subtitle {
   color: white;
