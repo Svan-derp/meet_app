@@ -1,13 +1,11 @@
-<template>
-  <div>
-    <b-field>
-      <SelectActivityCategory />
-      <SelectLocation />
-      <NuxtLink to="/find">
-        <b-button label="Zoek" type="is-primary" />
-      </NuxtLink>
-    </b-field>
-  </div>
+<template lang="vue">
+<b-field>
+  <SelectActivityCategory />
+  <SelectLocation />
+  <NuxtLink to="/find">
+    <b-button label="Zoek" type="is-primary" />
+  </NuxtLink>
+</b-field>
 </template>
 
 <script lang="ts">
