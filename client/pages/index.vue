@@ -1,13 +1,14 @@
 <template lang="vue">
 <div>
   <section class="section is-large quote">
-    <!-- //TODO:Loop in over few quotes -->
+    <!-- TODO:Loop in over few quotes -->
     <h1 class="title">Zoek activiteiten bij jouw in de buurt!</h1>
     <h2 class="subtitle">
       Plan of neem deel aan activiteiten waar je aanmeldingen en updates kan bijhouden.
     </h2>
   </section>
   <QuickSearch class="container search-bar" />
+  <h1>test</h1>
 </div>
 </template>
 

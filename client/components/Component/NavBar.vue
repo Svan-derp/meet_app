@@ -1,6 +1,6 @@
 <template lang="vue">
   <b-navbar type="is-light">
-    //TODO: hover and active must only underline item + ?!cursor?
+    <!-- TODO: hover and active must only underline item + ?!cursor? -->
     <template #brand>
       <NuxtLink class="navbar-item brand" to="/">
           <!-- <img
@@ -26,15 +26,14 @@
     </template>
 
     <template #end>
-        <div class="buttons">
-          <NuxtLink to="/">
-          <a class="button is-primary">
-            <strong>Inschrijven</strong>
-          </a></NuxtLink>
-          <NuxtLink to="/">
-          <a class="button is-light"> Aanmelden </a></NuxtLink>
-        </div>
-      
+      <div class="buttons">
+        <NuxtLink to="/">
+        <a class="button is-primary">
+          <strong>Inschrijven</strong>
+        </a></NuxtLink>
+        <NuxtLink to="/">
+        <a class="button is-light"> Aanmelden </a></NuxtLink>
+      </div>
     </template>
   </b-navbar>
 </template>

@@ -7,7 +7,7 @@ const {
   HOST: host = '0.0.0.0',
 } = process.env;
 
-const isDev = !(NODE_ENV === 'production');
+const isDev = !(NODE_ENV === 'development');
 const configFile = resolve(process.cwd(), 'client', 'tsconfig.json');
 
 export const config: NuxtConfig = {
@@ -68,11 +68,6 @@ export const config: NuxtConfig = {
   },
 
   privateRuntimeConfig: {
-    auth: {
-      strategries: {
-        local: {},
-      },
-    },
     axios: {
       baseURL: `http://127.0.0.1:${port}`,
     },
@@ -84,9 +79,6 @@ export const config: NuxtConfig = {
     enabled: true, // Enable in production
     report: false, // set true to turn one console messages during module init
     test: /\.(js|css|html|txt|xml|svg)$/, // files to compress on build
-    router: {
-      middleware: ['auth'],
-    },
     // Serving options
     middleware: {
       // You can disable middleware if you serve static files using nginx...
