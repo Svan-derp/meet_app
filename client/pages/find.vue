@@ -25,15 +25,13 @@ export default {
 
 <style scoped>
 .left-area {
-  padding-top: 35px;
-  padding-left: 35px;
+  padding: 35px 12px 0px 35px;
   max-width: 460px;
 }
 .right-area {
-  padding: 40px;
+  padding: 40px 40px 40px 40px;
 }
 .find-page {
   margin-top: 24px;
-  background-color: rgba(0, 0, 0, 0.01);
 }
 </style>

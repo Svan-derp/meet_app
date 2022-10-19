@@ -1,79 +1,62 @@
 <template>
-  <div class="card">
-    <div class="card-image">
-      <figure class="top-image"></figure>
-    </div>
-    <div class="card-content">
-      <p class="title is-4">Sneak preview and roadmap reveal</p>
-      <div class="columns">
-        <div class="column">
-          <NuxtLink to="/profile[offical_meet_app]" class="subtitle is-6"
-            >@official_meet_app</NuxtLink
+  <div class="panel">
+    <section>
+      <b-collapse
+        aria-id="contentIdForA11y2"
+        class="panel"
+        animation="slide"
+        v-model="isOpen"
+      >
+        <template #trigger>
+          <div class="panel-image"></div>
+          <div
+            class="panel-heading"
+            aria-controls="contentIdForA11y2"
+            :aria-expanded="isOpen"
           >
-        </div>
-        <div class="subtitle is-6 column">
-          <p>vanaf 12:00 tot 15:00</p>
-          <p>Herengracht 462, Amsterdam</p>
-        </div>
-      </div>
-      <div class="buttons">
-        <NuxtLink class="button" to="/event[event]">Meer informatie</NuxtLink>
-        <NuxtLink class="button" to="/event/join[user]"
-          >Direct aanmelden</NuxtLink
-        >
-        <NuxtLink class="button" to="/event/join[user]"
-          >Direct aanmelden</NuxtLink
-        >
-      </div>
-    </div>
+            <div class="columns">
+              <div class="column is-half">Event title Lorum</div>
+              <div class="column">address</div>
+              <div class="column">09:00 - 13:30</div>
+            </div>
+          </div>
+        </template>
+        Evenement beschrijving komt hier te staan
+        <footer class="card-footer">
+          <a class="card-footer-item">Evenement</a>
+          <a class="card-footer-item">Contact</a>
+          <a class="card-footer-item">Aanmelden</a>
+        </footer>
+      </b-collapse>
+    </section>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'EventCard',
+  name: 'Eventcard',
+
+  data() {
+    return {
+      isOpen: false,
+    };
+  },
 };
 </script>
 
 <style scoped>
-.card {
+.panel {
   box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.2);
   border-radius: 12px;
 }
-.card:hover .card-content {
-  height: 100%;
-}
-.top-image {
-  height: 15rem;
+.panel-image {
+  height: 12rem;
   background-image: url(../../assets/pexels-pixabay-1.jpg);
   background-size: cover;
   border-radius: 12px;
 }
-.card-content {
-  color: white;
-  position: absolute;
-  border-radius: 4px;
-  bottom: 0;
-  background-color: var(--primary);
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  transition: 0.6s ease;
-}
-.title {
-  color: white;
-  /* TODO: fix for mobile display */
-  margin-top: -10px;
-}
-.subtitle {
-  color: white;
-}
-.buttons {
-  margin-top: -8px;
-  padding: 16px;
-  justify-content: center;
-}
-.button {
-  width: 45%;
+.panel-heading {
+  background-color: white;
+  border-radius: 12px;
 }
 </style>

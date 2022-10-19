@@ -15,7 +15,7 @@ import SelectLocation from '@/components/Base/SelectLocation.vue';
 // TODO: get compontent data and send to activity page
 
 export default {
-  name: 'QuickSearch',
+  name: 'SearchQuick',
   components: { SelectActivityCategory, SelectLocation },
 };
 </script>

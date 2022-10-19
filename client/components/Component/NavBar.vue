@@ -14,31 +14,29 @@
       >
     </template>
     <template #start>
-      <NuxtLink class="navbar-item" to="/find"> Zoek activiteit </NuxtLink>
-      <NuxtLink class="navbar-item" to="/host"> Plaats activiteit </NuxtLink>
-      <b-navbar-dropdown label="Met ons">
-        <NuxtLink class="navbar-item" to="/team"> Team </NuxtLink>
-        <NuxtLink class="navbar-item" to="/test">
-          Contact</NuxtLink
-        >
-         <b-navbar-item> Meld een probleem </b-navbar-item>
-      </b-navbar-dropdown>
-    </template>
+  <NuxtLink class="navbar-item" to="/find"> Zoek activiteit </NuxtLink>
+  <NuxtLink class="navbar-item" to="/host"> Plaats activiteit </NuxtLink>
+  <b-navbar-dropdown label="Met ons">
+    <NuxtLink class="navbar-item" to="/team"> Team </NuxtLink>
+    <NuxtLink class="navbar-item" to="/test"> Contact</NuxtLink>
+    <b-navbar-item> Meld een probleem </b-navbar-item>
+  </b-navbar-dropdown>
+</template>
 
-    <template #end>
-    <!-- <div v-if="$auth.loggedIn">
-    {{ $auth.name}}</div>
-    <div v-else> -->
-        <div class="buttons">
-          <NuxtLink to="/">
-          <a class="button is-primary">
-            <strong>Inschrijven</strong>
-          </a></NuxtLink>
-          <NuxtLink to="/">
-          <a class="button is-light"> Aanmelden </a></NuxtLink>
-        </div>
-    <!-- </div> -->
-    </template>
+  <template #end>
+  <!-- <div v-if="$auth.loggedIn">
+      {{ $auth.name}}</div>
+      <div v-else> -->
+  <div class="buttons">
+    <NuxtLink to="/register">
+      <a class="button is-primary">
+        <strong>Inschrijven</strong>
+      </a></NuxtLink
+    >
+    <NuxtLink to="/login"> <a class="button is-light"> Aanmelden </a></NuxtLink>
+  </div>
+  <!-- </div> -->
+</template>
   </b-navbar>
 </template>
 
@@ -46,8 +44,7 @@
 import { Component, Vue } from 'nuxt-property-decorator';
 
 @Component
-export default class MenuHeader extends Vue { }
-
+export default class MenuHeader extends Vue {}
 </script>
 
 <style lang="scss" scoped>
@@ -56,7 +53,7 @@ export default class MenuHeader extends Vue { }
 }
 
 .button {
-  margin-right: 20px
+  margin-right: 20px;
 }
 
 // TODO: work on this glued stuff (exclude brand focus+hover and dropdown bgcolor)

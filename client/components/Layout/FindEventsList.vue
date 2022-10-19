@@ -20,6 +20,7 @@ export default {
 <style>
 .day-title {
   font-size: x-large;
+  color: rgba(0, 0, 0, 0.8);
 }
 hr.rounded {
   border-top: 2px solid rgba(187, 187, 187, 0.1);
