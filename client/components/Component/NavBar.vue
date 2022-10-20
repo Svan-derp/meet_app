@@ -1,46 +1,35 @@
 <template lang="vue">
   <b-navbar type="is-light">
-    <!-- //TODO: hover and active must only underline item + ?!cursor? -->
     <template #brand>
       <NuxtLink class="navbar-item brand" to="/">
-          <!-- <img
-          src="https://raw.githubusercontent.com/buefy/buefy/dev/static/img/buefy-logo.png"
-          alt="Lightweight UI components for Vue.js based on Bulma"
-          height="64"
-          width="192"
-        /> -->
           <strong>MEET_APP</strong>
-        </NuxtLink
-      >
+        </NuxtLink>
     </template>
+    
     <template #start>
-  <NuxtLink class="navbar-item" to="/find"> Zoek activiteit </NuxtLink>
-  <NuxtLink class="navbar-item" to="/host"> Plaats activiteit </NuxtLink>
-  <b-navbar-dropdown label="Met ons">
-    <NuxtLink class="navbar-item" to="/team"> Team </NuxtLink>
-    <NuxtLink class="navbar-item" to="/test"> Contact</NuxtLink>
-    <b-navbar-item> Meld een probleem </b-navbar-item>
-  </b-navbar-dropdown>
-</template>
+      <NuxtLink class="navbar-item" to="/find"> Zoek activiteit </NuxtLink>
+      <NuxtLink class="navbar-item" to="/host"> Plaats activiteit </NuxtLink>
+      <b-navbar-dropdown label="Met ons">
+        <NuxtLink class="navbar-item" to="/team"> Team </NuxtLink>
+        <NuxtLink class="navbar-item" to="/messages"> Contact</NuxtLink>
+        <NuxtLink class="navbar-item" to="/test"> Meld een probleem</NuxtLink>
+      </b-navbar-dropdown>
+    </template>
 
-  <template #end>
-  <!-- <div v-if="$auth.loggedIn">
-      {{ $auth.name}}</div>
-      <div v-else> -->
-  <div class="buttons">
-    <NuxtLink to="/register">
-      <a class="button is-primary">
-        <strong>Inschrijven</strong>
-      </a></NuxtLink
-    >
-    <NuxtLink to="/login"> <a class="button is-light"> Aanmelden </a></NuxtLink>
-  </div>
-  <!-- </div> -->
-</template>
+    <template #end>
+      <div class="buttons">
+        <NuxtLink to="/register">
+          <a class="button is-primary">
+            <strong>Inschrijven</strong>
+          </a></NuxtLink
+        >
+        <NuxtLink to="/login"> <a class="button is-light"> Aanmelden </a></NuxtLink>
+      </div>
+      </template>
   </b-navbar>
 </template>
 
-<script lang="ts">
+<script lang="ts" scoped>
 import { Component, Vue } from 'nuxt-property-decorator';
 
 @Component

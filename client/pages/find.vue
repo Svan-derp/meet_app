@@ -6,7 +6,7 @@
         <SearchMenu />
       </div>
       <div class="column right-area">
-        <EventList />
+        <ListEvent />
       </div>
     </div>
   </div>
@@ -14,12 +14,12 @@
 
 <script>
 import SearchMenu from '@/components/Component/SearchMenu.vue';
-import EventList from '@/components/Layout/FindEventsList.vue';
+import ListEvent from '@/components/Layout/ListEvents.vue';
 import MapBox from '@client/components/Base/MapBox.vue';
 
 export default {
   name: 'FindPage',
-  components: { SearchMenu, EventList, MapBox },
+  components: { SearchMenu, ListEvent, MapBox },
 };
 </script>
 
