@@ -1,9 +1,20 @@
 <template>
-  <h1>simple host dashboard page</h1>
+  <div class="host-page">
+    <EditEvent />
+  </div>
 </template>
 
 <script>
-export default {};
+import EditEvent from '@/components/Component/EditEvent.vue';
+
+export default {
+  name: 'HostPage',
+  components: { EditEvent },
+};
 </script>
 
-<style></style>
+<style scoped>
+.host-page {
+  margin-top: 24px;
+}
+</style>

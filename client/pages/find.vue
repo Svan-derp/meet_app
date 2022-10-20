@@ -14,8 +14,13 @@
 
 <script>
 import SearchMenu from '@/components/Component/SearchMenu.vue';
+<<<<<<< HEAD
 import ListEvent from '@/components/Layout/ListEvents.vue';
 import MapBox from '@client/components/Base/MapBox.vue';
+=======
+import EventList from '@/components/Layout/EventList.vue';
+import MapBox from '@/components/Base/MapBox.vue';
+>>>>>>> dev
 
 export default {
   name: 'FindPage',

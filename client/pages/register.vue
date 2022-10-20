@@ -1,17 +1,40 @@
 <template>
   <div class="container">
     <div class="screen">
-      <form class="login">
-        <input type="text" class="login__input" placeholder="Email" />
-        <input type="password" class="login__input" placeholder="Password" />
-        <button class="button is-primary">Registreer</button>
-      </form>
+      <b-tabs v-model="activeStep">
+        <b-tab-item label="1. Account aanmaken "> <RegisterUser /> </b-tab-item>
+
+        <b-tab-item label="2. Voorkeuren aangeven ">
+          Select categories with checkbox/cards in grid (like pinterest)
+        </b-tab-item>
+        <b-tab-item label="3. Acitviteiten zoeken ">
+          select a filter selection and forward to find page with
+          that</b-tab-item
+        ></b-tabs
+      >
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import RegisterUser from '@/components/Component/RegisterUser.vue';
+export default {
+  components: { RegisterUser },
+  data() {
+    return {
+      activeStep: 0,
+    };
+  },
+  created() {
+    // this.$nuxt.$on('emitRegister', ($event) => this.submitRegister($event));
+  },
+  methods: {
+    async submitRegister(e) {
+      this.activeStep + 1;
+      return console.log(JSON.stringify(this.registerForm));
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -19,39 +42,13 @@ export default {};
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 800px;
 }
 
 .screen {
   position: relative;
-  width: 360px;
+  width: 80vw;
   border-radius: 16px;
   box-shadow: 0px 8px 24px var(--primary);
-}
-
-.login {
-  padding: 30px;
-}
-
-.login__input {
-  border: none;
-  border-bottom: 2px solid #d1d1d4;
-  background: none;
-  padding: 10px;
-  padding-left: 24px;
-  font-weight: 700;
-  width: 100%;
-  transition: 0.2s;
-}
-
-.login__input:active,
-.login__input:focus,
-.login__input:hover {
-  outline: none;
-  border-bottom-color: #6a679e;
-}
-.button {
-  margin-top: 40px;
-  width: stretch;
 }
 </style>

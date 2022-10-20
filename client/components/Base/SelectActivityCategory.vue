@@ -1,5 +1,6 @@
 <template>
   <b-select expanded placeholder="Activiteiten">
+    <option value="new">Voeg een nieuwe toe</option>
     <optgroup label="Hobby's">
       <option value="flint">Flint</option>
       <option value="silver">Silver</option>

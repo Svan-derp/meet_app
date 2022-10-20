@@ -1,17 +1,37 @@
 <template>
   <div class="container">
     <div class="screen">
-      <form class="login">
-        <input type="text" class="login__input" placeholder="Email" />
-        <input type="password" class="login__input" placeholder="Password" />
-        <button class="button is-primary">Log In</button>
-      </form>
+      <div>
+        <b-field label="Email">
+          <b-input type="email" v-model="email" maxlength="30"> </b-input>
+        </b-field>
+
+        <b-field label="Wachtwoord">
+          <b-input type="password" v-model="password" password-reveal>
+          </b-input>
+        </b-field>
+        <b-button @click="submitRegister()" class="button is-primary"
+          >Registreer</b-button
+        >
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      email: 'email',
+      password: 'test',
+    };
+  },
+  methods: {
+    submitRegister() {
+      return console.log(JSON.stringify(this.email + this.password));
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -24,34 +44,18 @@ export default {};
 
 .screen {
   position: relative;
+  padding-top: 24px;
   width: 360px;
   border-radius: 16px;
   box-shadow: 0px 8px 24px var(--primary);
 }
 
-.login {
-  padding: 30px;
+.field {
+  padding: 0px 5vw 0px;
 }
 
-.login__input {
-  border: none;
-  border-bottom: 2px solid #d1d1d4;
-  background: none;
-  padding: 10px;
-  padding-left: 24px;
-  font-weight: 700;
-  width: 100%;
-  transition: 0.2s;
-}
-
-.login__input:active,
-.login__input:focus,
-.login__input:hover {
-  outline: none;
-  border-bottom-color: #6a679e;
-}
 .button {
-  margin-top: 40px;
+  margin-top: 24px;
   width: stretch;
 }
 </style>

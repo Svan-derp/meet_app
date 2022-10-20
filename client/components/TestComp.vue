@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <!-- <div>
     <h1>fetch component:</h1>
     <b-button @click="getUsers()">refresh</b-button>
     <b-button @click="log()">loggin</b-button>
@@ -8,43 +8,43 @@
         <span>{{ user.name }}</span>
       </li>
     </ul>
-  </div>
+  </div> -->
 </template>
 
 <script lang="ts">
-import { User } from '@common/UserInterface';
-import { Component, Vue } from 'nuxt-property-decorator';
+// import { User } from '@common/UserInterface';
+// import { Component, Vue } from 'nuxt-property-decorator';
 
-@Component
-export default class UserList extends Vue {
-  users: User[] = [];
-  loading = false;
+// @Component
+// export default class UserList extends Vue {
+//   users: User[] = [];
+//   loading = false;
 
-  async getUsers() {
-    return this.fetchUsers();
-  }
-  async log() {
-    try {
-      this.loading = true;
+//   async getUsers() {
+//     return this.fetchUsers();
+//   }
+//   async log() {
+//     try {
+//       this.loading = true;
 
-      this.users = await this.$axios.post('/session', {
-        email: 'john',
-        password: 'changeme',
-      });
-    } finally {
-      this.loading = false;
-    }
-  }
-  async fetchUsers() {
-    try {
-      this.loading = true;
+//       this.users = await this.$axios.post('/session', {
+//         email: 'john',
+//         password: 'changeme',
+//       });
+//     } finally {
+//       this.loading = false;
+//     }
+//   }
+//   async fetchUsers() {
+//     try {
+//       this.loading = true;
 
-      this.users = (await this.$axios.get('users'))?.data ?? [];
-    } finally {
-      this.loading = false;
-    }
-  }
-}
+//       this.users = (await this.$axios.get('users'))?.data ?? [];
+//     } finally {
+//       this.loading = false;
+//     }
+//   }
+// }
 </script>
 
 <style></style>
